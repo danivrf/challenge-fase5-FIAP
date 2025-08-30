@@ -11,11 +11,11 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- Felipe Livino dos Santos (RM 563187)
+- Daniel Veiga Rodrigues de Faria (RM 561410)
+- Tomas Haru Sakugawa Becker (RM 564147)
+- Daniel Tavares de Lima Freitas (RM 562625)
+- Gabriel Konno Carrozza (RM 564468)
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
