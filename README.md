@@ -167,7 +167,12 @@ Esta modelagem de dados é ideal para integração com ferramentas de Business I
 - Análise e Preparação: Foi realizada uma análise de dados inicial para verificar as características estatísticas e a distribuição dos dados através de histogramas e uma matriz de correlação. Verificou-se que não havia valores nulos nas colunas. Para o treinamento, os dados foram divididos em 80% para treino e 20% para teste.
 
 - Modelagem e Treinamento: Foram testados cinco algoritmos de classificação distintos: Árvore de Decisão, SVC (Support Vector Classification), AdaBoost, Regressão Logística e Random Forest. Os modelos foram treinados e comparados com base em sua performance no conjunto de teste.
-
+  ```bash
+    model_tree = DecisionTreeClassifier()
+    model_svm = SVC()
+    model_ada = AdaBoostClassifier()
+    model_log = LogisticRegression()
+    model_forest = RandomForestClassifier()
 **Principais Resultados e Conclusões**
 - Performance dos Modelos: A Árvore de Decisão e o Random Forest foram os modelos de maior destaque, ambos atingindo 100% de acurácia, precisão e recall para todas as classes. Os outros algoritmos tiveram um desempenho inferior, com o apresentador destacando que a Regressão Logística "não saiu legal" e o AdaBoost não conseguiu classificar nenhum caso como "normal".
 
@@ -207,7 +212,7 @@ Este projeto foi desenvolvido em **Python** e utiliza **Jupyter Notebook** para 
   - `numpy`
   - `matplotlib`
   - `seaborn`
-  - `scikit-learn`
+  - `scikit-learn`(from `sklearn.model_selection` import `train_test_split`)
 
 > **Dica:** É recomendado criar um ambiente virtual antes de instalar as bibliotecas.
 
