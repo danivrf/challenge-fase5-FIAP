@@ -216,7 +216,7 @@ challenge-fase5-FIAP/
 │   ├── Diagrama entidade relacionamento.pdf  # Script SQL e relatorio do projeto de banco de dados dessa fase
 │   └── diagrama_ER.png                       # Imagem exportada do Diagrama ER
 │
-├── 04_notebooks/                             # Notebooks com análise e machine learning
+├── 04_notebooks/                             # Notebook com análise e machine learning
 │   └── main_challenge.ipynb                  # Implementação e treino do modelo de ML
 │
 ├── README.md                                 # Documentação do projeto
