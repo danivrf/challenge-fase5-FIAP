@@ -39,30 +39,22 @@ Rumo ao NEXT!
 ## 📁 Estrutura de pastas
 ```
 challenge-fase5-FIAP/
-├── 01_assets/                     # Imagens, diagramas e outros arquivos visuais
+├── 01_assets/                                # Imagens, diagramas e outros arquivos visuais
 │
-├── 02_data/                       # Arquivos de dados utilizados no projeto
-│   ├── treino.csv                 # Dataset usado para treino do modelo
-│   └── teste.csv                  # Dataset usado para teste do modelo
+├── 02_data/                                  # Arquivos de dados utilizados no projeto
+│   └── dados_sensores_challenge.csv          # Dataset usado para treino do modelo
 │
-├── 03_modelagem/                  # Arquivos de modelagem do banco de dados
-│   ├── modelo_banco.dmd           # Modelo conceitual/DER
-│   ├── script_criacao.sql         # Script SQL de criação das tabelas
-│   └── diagrama_ER.png            # Imagem exportada do Diagrama ER
+├── 03_modelagem/                             # Arquivos de modelagem do banco de dados
+│   ├── challenge_sql.dmd                     # Modelo conceitual/DER
+│   └── diagrama_ER.png                       # Imagem exportada do Diagrama ER
 │
-├── 04_notebooks/                  # Notebooks com análise e machine learning
-│   ├── analise_dados.ipynb        # Análise exploratória e pré-processamento
-│   └── modelo_ml.ipynb            # Implementação e treino do modelo de ML
+├── 04_notebooks/                             # Notebooks com análise e machine learning
+│   └── main_challenge.ipynb                  # Implementação e treino do modelo de ML
 │
-├── 05_src/                        # Código-fonte Python
-│   ├── main.py                    # Script principal para rodar o modelo
-│   └── utils.py                   # Funções auxiliares
+├── document/                                 # Documentos do projeto (relatórios e anotações)
+│   └── Diagrama entidade relacionamento.pdf  # Relatório final do projeto
 │
-├── document/                      # Documentos do projeto (relatórios e anotações)
-│   └── relatorio.pdf              # Relatório final do projeto
-│
-├── README.md                      # Documentação do projeto
-└── requirements.txt               # Dependências do projeto
+├── README.md                                 # Documentação do projeto
 ```
 
 ## 🔧 Como executar o código
