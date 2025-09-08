@@ -158,7 +158,7 @@ Esta modelagem de dados é ideal para integração com ferramentas de Business I
  - Dashboards: É possível criar dashboards interativos que filtrem os dados por equipamento (T_EQUIPAMENTO_id), permitindo que um gerente de manutenção visualize o status de uma máquina específica em tempo real ou em um período selecionado.
  -	Modelos de ML: Os dados bem estruturados na tabela T_LEITURA_SENSOR servem como uma fonte de dados limpa e organizada para treinar os modelos de Machine Learning, que poderão prever falhas com base em padrões históricos de vibração e temperatura.
 
-## Análise da Implementação e Resultados do Machine Learning
+## 🤖 Análise da Implementação e Resultados do Machine Learning
 *O desenvolvimento do modelo de Machine Learning foi realizado com o objetivo de classificar o status de equipamentos com base em leituras de sensores. O processo completo, desde a análise dos dados até a seleção do modelo final, está detalhado abaixo.*
 
 **Implementação do Machine Learning**
@@ -174,8 +174,6 @@ Esta modelagem de dados é ideal para integração com ferramentas de Business I
 - Seleção do Melhor Modelo: Embora dois modelos tenham alcançado 100% de performance, a Árvore de Decisão foi escolhida como o modelo final. A justificativa para a escolha foi que a Árvore de Decisão é um modelo "mais performático" (menos complexo) por consistir em uma única árvore, em contraste com as múltiplas árvores do Random Forest.
 
 - Finalização: O modelo de Árvore de Decisão foi salvo em formato "pickle" (.pkl) para que possa ser carregado posteriormente e utilizado para classificar em tempo real os novos dados provenientes dos sensores.
-
-
 
 ## 📁 Estrutura de pastas
 ```
