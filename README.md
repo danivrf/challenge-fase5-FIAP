@@ -41,6 +41,15 @@ Dentro do repositório, na pasta `_notebooks`, encontra-se o **notebook principa
 
 ## Diagrama Entidade-Relacionamento (DER) - Descrição Detalhada
 
+O banco de dados foi projetado para gerenciar informações relacionadas a equipamentos, sensores e suas respectivas leituras. O objetivo é centralizar e organizar esses dados de forma estruturada, permitindo fácil consulta, manutenção e integração com aplicações externas.
+A modelagem é composta por três tabelas principais:
+
+- T_EQUIPMENTS: armazena informações dos equipamentos, como marca, modelo e status.
+- T_SENSOR: registra os dados referentes a cada sensor individual.
+- T_LEITURA_SENSOR: armazena as leituras de temperatura, umidade e vibração, relacionando-as diretamente aos equipamentos e sensores por meio de chaves estrangeiras.
+
+A criação dessas tabelas é realizada por meio de scripts SQL, executados em um banco de dados Oracle em execução dentro de um container Docker.
+
 <img src="_modelagem/diagrama_ER.png" alt="Diagrama ER" width="500"/>
 
 O modelo é composto por três entidades centrais que se relacionam para registrar as medições dos sensores de um equipamento específico.
