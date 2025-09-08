@@ -216,7 +216,23 @@ Este projeto foi desenvolvido em **Python** e utiliza **Jupyter Notebook** para 
 1. **Clonar o repositório**  
    ```bash
    git clone https://github.com/danivrf/challenge-fase5-FIAP.git
-2. **
+2. **Navegar até a pasta do projeto**
+    ```bash
+   cd challenge-fase5-FIAP
+3. **Instalar as bibliotecas necessárias**
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+4. **Abrir o notebook**
+   - Entre na pasta `_notebooks`
+   - Abra o arquivo `.ipynb` no Jupyter Notebook ou Jupyter Lab
+ 5. **Executar o notebook**
+    - Execute as células na ordem, que incluem:
+        - Análise exploratória dos dados
+        - Preparação do dataset
+        - Construção e treinamento do modelo de Machine Learning
+        - Visualizações e gráficos de resultados
+ **Visualizar resultados**
+    - Os gráficos e outputs do notebook mostram insights sobre os dados coletados pelos sensores e as predições do modelo.
 
 ## 📋 Licença
 
