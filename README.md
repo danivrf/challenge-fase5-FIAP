@@ -185,13 +185,11 @@ challenge-fase5-FIAP/
 │
 ├── 03_modelagem/                             # Arquivos de modelagem do banco de dados
 │   ├── challenge_sql.dmd                     # Modelo conceitual/DER
+│   └── Diagrama entidade relacionamento.pdf  # Script SQL e relatorio do projeto de banco de dados dessa fase
 │   └── diagrama_ER.png                       # Imagem exportada do Diagrama ER
 │
 ├── 04_notebooks/                             # Notebooks com análise e machine learning
 │   └── main_challenge.ipynb                  # Implementação e treino do modelo de ML
-│
-├── document/                                 # Documentos do projeto (relatórios e anotações)
-│   └── Diagrama entidade relacionamento.pdf  # Relatório final do projeto
 │
 ├── README.md                                 # Documentação do projeto
 ```
