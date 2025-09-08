@@ -180,6 +180,10 @@ Esta modelagem de dados é ideal para integração com ferramentas de Business I
 
 - Finalização: O modelo de Árvore de Decisão foi salvo em formato "pickle" (.pkl) para que possa ser carregado posteriormente e utilizado para classificar em tempo real os novos dados provenientes dos sensores.
 
+## 🎥 Vídeo Demonstrativo
+
+Confira o funcionamento do projeto neste vídeo demonstrativo:
+▶️ [Assista ao vídeo no YouTube](https://youtu.be/AHhEeYmowgA)
 ## 📁 Estrutura de pastas
 ```
 challenge-fase5-FIAP/
