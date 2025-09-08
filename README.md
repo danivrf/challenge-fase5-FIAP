@@ -196,66 +196,27 @@ challenge-fase5-FIAP/
 
 ## 🔧 Como executar o código
 
-Este projeto foi desenvolvido em Python e utiliza Jupyter Notebook para documentar todo o fluxo de análise de dados e Machine Learning.
+Este projeto foi desenvolvido em **Python** e utiliza **Jupyter Notebook** para documentar todo o fluxo de análise de dados e Machine Learning.
 
-*Pré-requisitos*
+### Pré-requisitos
 
-- Python 3.9 ou superior
-
-- Jupyter Notebook ou Jupyter Lab
-
+- Python 3.9 ou superior  
+- Jupyter Notebook ou Jupyter Lab  
 - Bibliotecas Python:
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
 
- - `pandas`
+> **Dica:** É recomendado criar um ambiente virtual antes de instalar as bibliotecas.
 
- - `numpy`
+### Passo a passo
 
- - `matplotlib`
-
- - `seaborn`
-
- - `scikit-learn`
-
-*Dica: É recomendado criar um ambiente virtual antes de instalar as bibliotecas.*
-
-Passo a passo
-
-1. Clonar o repositório
-```
-git clone https://github.com/danivrf/challenge-fase5-FIAP.git
-```
-
-2. Navegar até a pasta do projeto
-```
-cd challenge-fase5-FIAP
-```
-
-3. Instalar as bibliotecas necessárias
-```
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-
-4. Abrir o notebook
-
-- Entre na pasta _notebooks
-
-- Abra o arquivo .ipynb no Jupyter Notebook ou Jupyter Lab
-
-5. Executar o notebook
-
-- Execute as células na ordem, que incluem:
-
- - Análise exploratória dos dados
-
- - Preparação do dataset
-
- - Construção e treinamento do modelo de Machine Learning
-
- - Visualizações e gráficos de resultados
-
-6. Visualizar resultados
-
-- Os gráficos e outputs do notebook mostram insights sobre os dados coletados pelos sensores e as predições do modelo.
+1. **Clonar o repositório**  
+   ```bash
+   git clone https://github.com/danivrf/challenge-fase5-FIAP.git
+2. **
 
 ## 📋 Licença
 
