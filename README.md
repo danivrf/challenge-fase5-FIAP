@@ -33,8 +33,15 @@ Rumo ao NEXT!
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+## 📜 Descrição
 
+Este repositório corresponde à **Fase 5 do Challenge Reply (FIAP)**, realizada em parceria com a **Hermes Reply**, cujo foco é unir a **modelagem de banco de dados** a uma aplicação prática de **Machine Learning**. O trabalho parte da necessidade de estruturar dados de sensores em um banco relacional e, em seguida, aplicar algoritmos de aprendizado de máquina para identificar padrões e realizar previsões a partir dessas informações.
+
+Dentro do repositório, na pasta `_notebooks`, encontra-se o **notebook principal do projeto**, que reúne todo o processo: análise exploratória dos dados, preparação do dataset, construção do modelo de Machine Learning, avaliação de desempenho e geração de gráficos para visualização dos resultados. Esse notebook concentra a documentação prática do trabalho, integrando código, explicações e evidências gráficas dos achados obtidos.
+
+## Diagrama entidade relacionamento 
+
+<img src="_modelagem/diagrama_ER.png" alt="Diagrama ER" width="500"/>
 
 ## 📁 Estrutura de pastas
 ```
