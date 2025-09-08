@@ -159,26 +159,45 @@ Esta modelagem de dados é ideal para integração com ferramentas de Business I
  -	Modelos de ML: Os dados bem estruturados na tabela T_LEITURA_SENSOR servem como uma fonte de dados limpa e organizada para treinar os modelos de Machine Learning, que poderão prever falhas com base em padrões históricos de vibração e temperatura.
 
 ## 🤖 Análise da Implementação e Resultados do Machine Learning
-*O desenvolvimento do modelo de Machine Learning foi realizado com o objetivo de classificar o status de equipamentos com base em leituras de sensores. O processo completo, desde a análise dos dados até a seleção do modelo final, está detalhado abaixo.*
 
-**Implementação do Machine Learning**
-- Fonte de Dados e Objetivo: O modelo foi treinado com uma base de dados gerada a partir de sensores, contendo as features temperatura, umidade e vibracao. O objetivo é um problema de classificação multiclasse para prever o status de um equipamento, que pode ser "normal", "alerta" ou "perigo".
+### Implementação do Machine Learning
 
-- Análise e Preparação: Foi realizada uma análise de dados inicial para verificar as características estatísticas e a distribuição dos dados através de histogramas e uma matriz de correlação. Verificou-se que não havia valores nulos nas colunas. Para o treinamento, os dados foram divididos em 80% para treino e 20% para teste.
+**Fonte de Dados e Objetivo:**  
+O modelo foi treinado utilizando uma base de dados gerada a partir dos sensores do projeto, contendo as variáveis **temperatura**, **umidade** e **vibração**. O objetivo é um **problema de classificação multiclasse**, em que o modelo prevê o **status do equipamento** como `"normal"`, `"alerta"` ou `"perigo"`.
 
-- Modelagem e Treinamento: Foram testados cinco algoritmos de classificação distintos: Árvore de Decisão, SVC (Support Vector Classification), AdaBoost, Regressão Logística e Random Forest. Os modelos foram treinados e comparados com base em sua performance no conjunto de teste.
-  ```bash
-    model_tree = DecisionTreeClassifier()
-    model_svm = SVC()
-    model_ada = AdaBoostClassifier()
-    model_log = LogisticRegression()
-    model_forest = RandomForestClassifier()
-**Principais Resultados e Conclusões**
-- Performance dos Modelos: A Árvore de Decisão e o Random Forest foram os modelos de maior destaque, ambos atingindo 100% de acurácia, precisão e recall para todas as classes. Os outros algoritmos tiveram um desempenho inferior, com o apresentador destacando que a Regressão Logística "não saiu legal" e o AdaBoost não conseguiu classificar nenhum caso como "normal".
+**Análise e Preparação dos Dados:**  
+Antes do treinamento, foi realizada uma análise exploratória para compreender o comportamento das variáveis. Essa análise incluiu:
+- Exibição das primeiras linhas do dataset;  
+- Estatísticas descritivas (média, mínimo, máximo, percentis);  
+- Verificação de valores nulos (não foram encontrados valores nulos);  
+- Análise visual, com histogramas das features e matriz de correlação.  
 
-- Seleção do Melhor Modelo: Embora dois modelos tenham alcançado 100% de performance, a Árvore de Decisão foi escolhida como o modelo final. A justificativa para a escolha foi que a Árvore de Decisão é um modelo "mais performático" (menos complexo) por consistir em uma única árvore, em contraste com as múltiplas árvores do Random Forest.
+Para o treinamento, as colunas **id** e **status** foram separadas: todas as demais colunas foram usadas como **features**, enquanto a coluna **status** foi usada como **target**. O dataset foi dividido em **80% para treinamento** e **20% para teste**.
 
-- Finalização: O modelo de Árvore de Decisão foi salvo em formato "pickle" (.pkl) para que possa ser carregado posteriormente e utilizado para classificar em tempo real os novos dados provenientes dos sensores.
+### Modelagem e Treinamento
+
+Foram testados cinco algoritmos de classificação distintos:
+- **Árvore de Decisão**  
+- **Support Vector Classifier (SVC)**  
+- **AdaBoost**  
+- **Regressão Logística**  
+- **Random Forest**
+
+Cada modelo foi treinado e avaliado com base em métricas de performance, incluindo **acurácia**, **precisão**, **recall** e **F1-score**. O objetivo foi identificar o modelo com melhor desempenho no conjunto de teste.
+
+### Principais Resultados e Conclusões
+
+**Performance dos Modelos:**  
+- A **Árvore de Decisão** e o **Random Forest** apresentaram desempenho máximo, alcançando **100% de acurácia, precisão e recall** para todas as classes.  
+- Os demais modelos apresentaram desempenho inferior:
+  - **AdaBoost** não classificou nenhum caso como `"normal"`.  
+  - **Regressão Logística** apresentou resultados insatisfatórios, especialmente considerando a métrica F1-score.  
+
+**Seleção do Melhor Modelo:**  
+Apesar de a Árvore de Decisão e o Random Forest terem alcançado performance máxima, a **Árvore de Decisão** foi escolhida como modelo final por ser **mais performática e menos complexa**, consistindo em uma única árvore, em contraste com as múltiplas árvores do Random Forest.
+
+**Finalização:**  
+O modelo final de Árvore de Decisão foi salvo em formato **pickle (`.pkl`)**, permitindo sua reutilização para classificar novos dados provenientes dos sensores em tempo real.
 
 ## 🎥 Vídeo Demonstrativo
 
