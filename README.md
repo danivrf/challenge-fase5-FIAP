@@ -158,6 +158,23 @@ Esta modelagem de dados é ideal para integração com ferramentas de Business I
  - Dashboards: É possível criar dashboards interativos que filtrem os dados por equipamento (T_EQUIPAMENTO_id), permitindo que um gerente de manutenção visualize o status de uma máquina específica em tempo real ou em um período selecionado.
  -	Modelos de ML: Os dados bem estruturados na tabela T_LEITURA_SENSOR servem como uma fonte de dados limpa e organizada para treinar os modelos de Machine Learning, que poderão prever falhas com base em padrões históricos de vibração e temperatura.
 
+## Análise da Implementação e Resultados do Machine Learning
+*O desenvolvimento do modelo de Machine Learning foi realizado com o objetivo de classificar o status de equipamentos com base em leituras de sensores. O processo completo, desde a análise dos dados até a seleção do modelo final, está detalhado abaixo.*
+
+**Implementação do Machine Learning**
+- Fonte de Dados e Objetivo: O modelo foi treinado com uma base de dados gerada a partir de sensores, contendo as features temperatura, umidade e vibracao. O objetivo é um problema de classificação multiclasse para prever o status de um equipamento, que pode ser "normal", "alerta" ou "perigo".
+
+- Análise e Preparação: Foi realizada uma análise de dados inicial para verificar as características estatísticas e a distribuição dos dados através de histogramas e uma matriz de correlação. Verificou-se que não havia valores nulos nas colunas. Para o treinamento, os dados foram divididos em 80% para treino e 20% para teste.
+
+- Modelagem e Treinamento: Foram testados cinco algoritmos de classificação distintos: Árvore de Decisão, SVC (Support Vector Classification), AdaBoost, Regressão Logística e Random Forest. Os modelos foram treinados e comparados com base em sua performance no conjunto de teste.
+
+**Principais Resultados e Conclusões**
+- Performance dos Modelos: A Árvore de Decisão e o Random Forest foram os modelos de maior destaque, ambos atingindo 100% de acurácia, precisão e recall para todas as classes. Os outros algoritmos tiveram um desempenho inferior, com o apresentador destacando que a Regressão Logística "não saiu legal" e o AdaBoost não conseguiu classificar nenhum caso como "normal".
+
+- Seleção do Melhor Modelo: Embora dois modelos tenham alcançado 100% de performance, a Árvore de Decisão foi escolhida como o modelo final. A justificativa para a escolha foi que a Árvore de Decisão é um modelo "mais performático" (menos complexo) por consistir em uma única árvore, em contraste com as múltiplas árvores do Random Forest.
+
+- Finalização: O modelo de Árvore de Decisão foi salvo em formato "pickle" (.pkl) para que possa ser carregado posteriormente e utilizado para classificar em tempo real os novos dados provenientes dos sensores.
+
 
 
 ## 📁 Estrutura de pastas
