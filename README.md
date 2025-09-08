@@ -37,16 +37,33 @@ Rumo ao NEXT!
 
 
 ## 📁 Estrutura de pastas
-
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
-
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
-
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
-
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
-
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+```
+challenge-fase5-FIAP/
+├── 01_assets/                     # Imagens, diagramas e outros arquivos visuais
+│
+├── 02_data/                       # Arquivos de dados utilizados no projeto
+│   ├── treino.csv                 # Dataset usado para treino do modelo
+│   └── teste.csv                  # Dataset usado para teste do modelo
+│
+├── 03_modelagem/                  # Arquivos de modelagem do banco de dados
+│   ├── modelo_banco.dmd           # Modelo conceitual/DER
+│   ├── script_criacao.sql         # Script SQL de criação das tabelas
+│   └── diagrama_ER.png            # Imagem exportada do Diagrama ER
+│
+├── 04_notebooks/                  # Notebooks com análise e machine learning
+│   ├── analise_dados.ipynb        # Análise exploratória e pré-processamento
+│   └── modelo_ml.ipynb            # Implementação e treino do modelo de ML
+│
+├── 05_src/                        # Código-fonte Python
+│   ├── main.py                    # Script principal para rodar o modelo
+│   └── utils.py                   # Funções auxiliares
+│
+├── document/                      # Documentos do projeto (relatórios e anotações)
+│   └── relatorio.pdf              # Relatório final do projeto
+│
+├── README.md                      # Documentação do projeto
+└── requirements.txt               # Dependências do projeto
+```
 
 ## 🔧 Como executar o código
 
