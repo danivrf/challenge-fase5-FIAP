@@ -213,7 +213,7 @@ challenge-fase5-FIAP/
 │
 ├── 03_modelagem/                             # Arquivos de modelagem do banco de dados
 │   ├── challenge_sql.dmd                     # Modelo conceitual/DER
-│   └── Diagrama entidade relacionamento.pdf  # Script SQL e relatorio do projeto de banco de dados dessa fase
+│   ├── Diagrama entidade relacionamento.pdf  # Script SQL e relatorio do projeto de banco de dados dessa fase
 │   └── diagrama_ER.png                       # Imagem exportada do Diagrama ER
 │
 ├── 04_notebooks/                             # Notebooks com análise e machine learning
