@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="67960F52-6C98-C7FB-471D-6A76532056A7" name="T SENSOR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="DFEE5E70-3EFE-795F-CDC7-AD5F57C7160E" propertySourceId="" propertyTargetId=""/>
-   <object objectType="Entity" objectID="7F486777-0682-93D3-07FD-2D823898189F" name="T LEITURA SENSOR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="DFEE5E70-3EFE-795F-CDC7-AD5F57C7160E" propertySourceId="" propertyTargetId=""/>
-   <object objectType="Entity" objectID="955F26E9-033D-5106-E201-9F618B0497DB" name="T EQUIPAMENTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="DFEE5E70-3EFE-795F-CDC7-AD5F57C7160E" propertySourceId="" propertyTargetId=""/>
-   <object objectType="Relation" objectID="0530CB0E-E18D-5809-50DD-619668BAD5D0" name="T_LEITURA_SENSOR_T_SENSOR_FK" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="DFEE5E70-3EFE-795F-CDC7-AD5F57C7160E" propertySourceId="67960F52-6C98-C7FB-471D-6A76532056A7" propertyTargetId="7F486777-0682-93D3-07FD-2D823898189F"/>
-   <object objectType="Relation" objectID="83AD4E08-C1AA-79CD-FD63-4CB646538A2B" name="T_LEITURA_SENSOR_T_EQUIPAMENTO_FK" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="DFEE5E70-3EFE-795F-CDC7-AD5F57C7160E" propertySourceId="955F26E9-033D-5106-E201-9F618B0497DB" propertyTargetId="7F486777-0682-93D3-07FD-2D823898189F"/>
-</oracle.dbtools.crest.model.design.logical.LogicalDesign>
