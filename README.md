@@ -212,6 +212,7 @@ O modelo final de Árvore de Decisão foi salvo em formato **pickle (`.pkl`)**, 
 
 Confira o funcionamento do projeto neste vídeo demonstrativo:
 ▶️ [Assista ao vídeo no YouTube](https://youtu.be/AHhEeYmowgA)
+
 ## 📁 Estrutura de pastas
 ```
 challenge-fase5-FIAP/
